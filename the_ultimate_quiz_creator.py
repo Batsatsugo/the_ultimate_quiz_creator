@@ -25,3 +25,8 @@ def quiz_creator():
             }
 
             file.write(json.dumps(question_data) + "\n")
+
+            another = input("\nDo you want to add another question? (yes/no): ").lower()
+            if another != "yes":
+                print("\n✅ All questions have been saved to 'quiz_data.txt'. ✅")
+                break
