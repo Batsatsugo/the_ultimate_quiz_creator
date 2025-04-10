@@ -6,3 +6,7 @@ def quiz_creator():
     print("\n🔥 Welcome to the Ultimate Quiz Creator! 🔥\n")
 
     with open(filename, "w") as file:
+        while True:
+            questions = input("\nEnter your question: ")
+
+            choices = {}
