@@ -17,3 +17,5 @@ def quiz_creator():
             while correct_answer not in choices:
                 print("Invalid choice. Please enter a valid option (a, b, c, or d).")
                 correct_answer = input("Enter the correct answer: ").lower()
+
+            question_data = {}
