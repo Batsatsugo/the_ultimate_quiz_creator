@@ -23,3 +23,5 @@ def quiz_creator():
                 "choices": choices,
                 "answer": correct_answer
             }
+
+            file.write(json.dumps(question_data) + "\n")
