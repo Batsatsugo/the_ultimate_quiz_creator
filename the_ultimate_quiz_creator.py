@@ -10,3 +10,5 @@ def quiz_creator():
             questions = input("\nEnter your question: ")
 
             choices = {}
+            for option in ['a', 'b', 'c', 'd']:
+                choices[option] = input(f"Enter choice {option.upper()}: ")
