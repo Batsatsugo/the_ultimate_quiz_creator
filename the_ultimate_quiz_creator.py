@@ -19,7 +19,7 @@ def quiz_creator():
                 correct_answer = input("Enter the correct answer: ").lower()
 
             question_data = {
-                "question": question,
+                "question": questions,
                 "choices": choices,
                 "answer": correct_answer
             }
@@ -30,3 +30,7 @@ def quiz_creator():
             if another != "yes":
                 print("\n✅ All questions have been saved to 'quiz_data.txt'. ✅")
                 break
+
+
+if __name__ == "__main__":
+    quiz_creator()
