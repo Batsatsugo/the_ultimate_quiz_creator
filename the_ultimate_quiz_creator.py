@@ -8,6 +8,7 @@ def quiz_creator():
 # print the title of the ultimate quiz creator
     print("\n🔥 Welcome to the Ultimate Quiz Creator! 🔥\n")
 
+# open the file in write mode
     with open(filename, "w") as file:
         while True:
             questions = input("\nEnter your question: ")
