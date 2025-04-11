@@ -44,6 +44,6 @@ def quiz_creator():
                 print("\n✅ All questions have been saved to 'quiz_data.txt'. ✅")
                 break
 
-
+# run the quiz creator only if this script is executed directly
 if __name__ == "__main__":
     quiz_creator()
