@@ -1,6 +1,7 @@
 # Import the json module to format and store the ultimate quiz data as JSON.
 import json
 
+# Function to create and save the ultimate quiz questions
 def quiz_creator():
     filename = "the_ultimate_quiz_data.txt"
 
