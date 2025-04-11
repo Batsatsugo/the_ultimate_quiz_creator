@@ -26,6 +26,7 @@ def quiz_creator():
                 print("Invalid choice. Please enter a valid option (a, b, c, or d).")
                 correct_answer = input("Enter the correct answer: ").lower()
 
+# store the question and answers in a dictionary
             question_data = {
                 "question": questions,
                 "choices": choices,
