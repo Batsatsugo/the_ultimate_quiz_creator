@@ -38,6 +38,8 @@ def quiz_creator():
 
 # ask the user if they want to add another question
             another = input("\nDo you want to add another question? (yes/no): ").lower()
+
+# if the user doesn't enter "yes", exit the loop
             if another != "yes":
                 print("\n✅ All questions have been saved to 'quiz_data.txt'. ✅")
                 break
