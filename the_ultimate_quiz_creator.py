@@ -13,6 +13,7 @@ def quiz_creator():
         while True: # initialize an infinite loop to allow multiple questions to be added
             questions = input("\nEnter your question: ") # prompt user to enter a quiz question
 
+ # dictionary to store multiple-choice options
             choices = {}
             for option in ['a', 'b', 'c', 'd']:
                 choices[option] = input(f"Enter choice {option.upper()}: ")
