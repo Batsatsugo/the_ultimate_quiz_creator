@@ -33,6 +33,7 @@ def quiz_creator():
                 "answer": correct_answer
             }
 
+# convert the dictionary to a JSON string and write it to the file
             file.write(json.dumps(question_data) + "\n")
 
             another = input("\nDo you want to add another question? (yes/no): ").lower()
