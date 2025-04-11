@@ -13,11 +13,12 @@ def quiz_creator():
         while True: # initialize an infinite loop to allow multiple questions to be added
             questions = input("\nEnter your question: ") # prompt user to enter a quiz question
 
- # dictionary to store multiple-choice options
+# dictionary to store multiple-choice options
             choices = {}
             for option in ['a', 'b', 'c', 'd']:
                 choices[option] = input(f"Enter choice {option.upper()}: ")
 
+# ask user for the correct answer
             correct_answer = input("Enter the correct answer (a, b, c, or d): ").lower()
             while correct_answer not in choices:
                 print("Invalid choice. Please enter a valid option (a, b, c, or d).")
