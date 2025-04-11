@@ -20,6 +20,8 @@ def quiz_creator():
 
 # ask user for the correct answer
             correct_answer = input("Enter the correct answer (a, b, c, or d): ").lower()
+
+# validate that the correct answer is one of the provided choices
             while correct_answer not in choices:
                 print("Invalid choice. Please enter a valid option (a, b, c, or d).")
                 correct_answer = input("Enter the correct answer: ").lower()
