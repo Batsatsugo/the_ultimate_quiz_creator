@@ -36,6 +36,7 @@ def quiz_creator():
 # convert the dictionary to a JSON string and write it to the file
             file.write(json.dumps(question_data) + "\n")
 
+# ask the user if they want to add another question
             another = input("\nDo you want to add another question? (yes/no): ").lower()
             if another != "yes":
                 print("\n✅ All questions have been saved to 'quiz_data.txt'. ✅")
