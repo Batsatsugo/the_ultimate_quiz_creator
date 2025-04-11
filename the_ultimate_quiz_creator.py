@@ -11,7 +11,7 @@ def quiz_creator():
 # open the file in write mode
     with open(filename, "w") as file:
         while True: # initialize an infinite loop to allow multiple questions to be added
-            questions = input("\nEnter your question: ")
+            questions = input("\nEnter your question: ") # prompt user to enter a quiz question
 
             choices = {}
             for option in ['a', 'b', 'c', 'd']:
