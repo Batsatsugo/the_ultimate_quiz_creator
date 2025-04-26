@@ -9,7 +9,7 @@ def quiz_creator():
     print("\n🔥 Welcome to the Ultimate Quiz Creator! 🔥\n")
 
 # open the file in write mode
-    with open(filename, "w") as file:
+    with open(filename, "a") as file:
         while True: # initialize an infinite loop to allow multiple questions to be added
             questions = input("\nEnter your question: ") # prompt user to enter a quiz question
 
