@@ -26,4 +26,6 @@ for i, line in enumerate(questions, 1):
         print(f"Skipping invalid question format on line {i}")
         continue
 
+    # Display the question number and text
     print(f"\nQ{i}: {question_data['question']}")
+    
