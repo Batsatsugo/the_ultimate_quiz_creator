@@ -10,3 +10,6 @@ def run_quiz():
     try:
         with open(filename, "r") as file:
             questions = file.readlines()
+    except FileNotFoundError:
+        print("❌ Quiz file not found! Please create the quiz first.")
+        return
