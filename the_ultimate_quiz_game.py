@@ -18,6 +18,7 @@ def run_quiz():
 score = 0
 total = len(questions)
 
+# loop through each questions in the file 
 for i, line in enumerate(questions, 1):
     try:
         question_data = json.loads(line)
