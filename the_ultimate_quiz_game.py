@@ -30,3 +30,5 @@ for i, line in enumerate(questions, 1):
     print(f"\nQ{i}: {question_data['question']}")
     for key, value in question_data['choices'].items():
         print(f"  {key.upper()}. {value}")
+
+    user_answer = input("Your answer (a, b, c, or d): ").lower()
