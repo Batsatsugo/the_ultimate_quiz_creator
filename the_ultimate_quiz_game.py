@@ -17,3 +17,5 @@ def run_quiz():
 
 score = 0
 total = len(questions)
+
+for i, line in enumerate(questions, 1):
