@@ -18,10 +18,12 @@ def run_quiz():
 score = 0
 total = len(questions)
 
-# loop through each questions in the file 
+# loop through each questions in the file
 for i, line in enumerate(questions, 1):
     try:
         question_data = json.loads(line)
     except json.JSONDecodeError:
         print(f"Skipping invalid question format on line {i}")
         continue
+
+    print(f"\nQ{i}: {question_data['question']}")
