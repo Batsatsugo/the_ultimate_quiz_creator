@@ -38,3 +38,6 @@ for i, line in enumerate(questions, 1):
     if user_answer == question_data["answer"]:
         print("✅ Correct!")
         score += 1
+    else:
+        correct = question_data["choices"][question_data["answer"]]
+        print(f"❌ Incorrect. The correct answer was: {question_data['answer'].upper()} - {correct}")
