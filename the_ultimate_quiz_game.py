@@ -7,6 +7,7 @@ def run_quiz():
 
     print("\n🧠 Welcome to The Ultimate Quiz Game! 🧠\n")
 
+# exception handling to try to open the quiz data or if the file doesn't exist, show error and exit
     try:
         with open(filename, "r") as file:
             questions = file.readlines()
