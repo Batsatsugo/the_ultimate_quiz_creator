@@ -43,3 +43,6 @@ for i, line in enumerate(questions, 1):
         print(f"❌ Incorrect. The correct answer was: {question_data['answer'].upper()} - {correct}")
 
 print(f"\n🎉 Quiz completed! You scored {score}/{total}.")
+
+if __name__ == "__main__":
+    run_quiz()
