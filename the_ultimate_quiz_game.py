@@ -14,3 +14,5 @@ def run_quiz():
     except FileNotFoundError:
         print("❌ Quiz file not found! Please create the quiz first.")
         return
+
+score = 0
