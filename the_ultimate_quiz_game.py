@@ -6,3 +6,7 @@ def run_quiz():
     filename = "the_ultimate_quiz_data.txt"
 
     print("\n🧠 Welcome to The Ultimate Quiz Game! 🧠\n")
+
+    try:
+        with open(filename, "r") as file:
+            questions = file.readlines()
