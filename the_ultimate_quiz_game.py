@@ -28,4 +28,5 @@ for i, line in enumerate(questions, 1):
 
     # Display the question number and text
     print(f"\nQ{i}: {question_data['question']}")
-    
+    for key, value in question_data['choices'].items():
+        print(f"  {key.upper()}. {value}")
