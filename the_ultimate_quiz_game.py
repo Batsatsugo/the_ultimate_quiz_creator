@@ -16,3 +16,4 @@ def run_quiz():
         return
 
 score = 0
+total = len(questions)
