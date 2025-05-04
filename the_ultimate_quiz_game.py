@@ -33,3 +33,7 @@ for i, line in enumerate(questions, 1):
 
     # ask user for their answer
     user_answer = input("Your answer (a, b, c, or d): ").lower()
+
+    if user_answer == question_data["answer"]:
+        print("✅ Correct!")
+        score += 1
