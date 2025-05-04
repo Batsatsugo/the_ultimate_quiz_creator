@@ -15,34 +15,34 @@ def run_quiz():
         print("❌ Quiz file not found! Please create the quiz first.")
         return
 
-score = 0
-total = len(questions)
+    score = 0
+    total = len(questions)
 
-# loop through each questions in the file
-for i, line in enumerate(questions, 1):
-    try:
-        question_data = json.loads(line)
-    except json.JSONDecodeError:
-        print(f"Skipping invalid question format on line {i}")
-        continue
+    # loop through each questions in the file
+    for i, line in enumerate(questions, 1):
+        try:
+            question_data = json.loads(line)
+        except json.JSONDecodeError:
+            print(f"Skipping invalid question format on line {i}")
+            continue
 
-    # Display the question number and text
-    print(f"\nQ{i}: {question_data['question']}")
-    for key, value in question_data['choices'].items():
-        print(f"  {key.upper()}. {value}")
+        # Display the question number and text
+        print(f"\nQ{i}: {question_data['question']}")
+        for key, value in question_data['choices'].items():
+            print(f"  {key.upper()}. {value}")
 
-    # ask user for their answer
-    user_answer = input("Your answer (a, b, c, or d): ").lower()
+        # ask user for their answer
+        user_answer = input("Your answer (a, b, c, or d): ").lower()
 
-    # check if the answer is correct
-    if user_answer == question_data["answer"]:
-        print("✅ Correct!")
-        score += 1
-    else:
-        correct = question_data["choices"][question_data["answer"]]
-        print(f"❌ Incorrect. The correct answer was: {question_data['answer'].upper()} - {correct}")
+        # check if the answer is correct
+        if user_answer == question_data["answer"]:
+            print("✅ Correct!")
+            score += 1
+        else:
+            correct = question_data["choices"][question_data["answer"]]
+            print(f"❌ Incorrect. The correct answer was: {question_data['answer'].upper()} - {correct}")
 
-print(f"\n🎉 Quiz completed! You scored {score}/{total}.")
+    print(f"\n🎉 Quiz completed! You scored {score}/{total}.")
 
 if __name__ == "__main__":
     run_quiz()
