@@ -19,3 +19,8 @@ score = 0
 total = len(questions)
 
 for i, line in enumerate(questions, 1):
+    try:
+        question_data = json.loads(line)
+    except json.JSONDecodeError:
+        print(f"Skipping invalid question format on line {i}")
+        continue
