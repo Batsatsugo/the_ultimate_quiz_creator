@@ -41,3 +41,5 @@ for i, line in enumerate(questions, 1):
     else:
         correct = question_data["choices"][question_data["answer"]]
         print(f"❌ Incorrect. The correct answer was: {question_data['answer'].upper()} - {correct}")
+
+print(f"\n🎉 Quiz completed! You scored {score}/{total}.")
